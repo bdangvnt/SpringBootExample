@@ -27,9 +27,9 @@ public class HibernateUtil {
 			// prop.put("hibernate.connection.password", app.getPassword());
 
 			prop.put("hibernate.connection.driver_class", "org.mariadb.jdbc.Driver");
-			prop.put("hibernate.connection.url", "jdbc:mariadb://127.0.0.1:3306/boot");
-			prop.put("hibernate.connection.username", "root");
-			prop.put("hibernate.connection.password", "");
+			prop.put("hibernate.connection.url", "jdbc:mariadb://nt71li6axbkq1q6a.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/wyrox3akrgwz5xnr");
+			prop.put("hibernate.connection.username", "r87mtpmjfpibvi6w");
+			prop.put("hibernate.connection.password", "x0a8pqxqzxudq0oi");
 
 			prop.put("hibernate.current_session_context_class", "thread");
 			prop.put("hibernate.query.factory_class", "org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory");
