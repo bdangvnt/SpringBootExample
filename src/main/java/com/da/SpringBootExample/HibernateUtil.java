@@ -34,7 +34,7 @@ public class HibernateUtil {
 
 			prop.put("hibernate.current_session_context_class", "thread");
 			prop.put("hibernate.query.factory_class", "org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory");
-			prop.put("hibernate.dialect", "org.hibernate.dialect.SQLServerDialect");
+			prop.put("hibernate.dialect", "org.hibernate.dialect.MariaDBDialect");
 			prop.put("hibernate.show_sql", "true");
 
 			sessionFactory = new Configuration().addPackage("com.da.SpringBootExample.models").addProperties(prop)
