@@ -54,7 +54,7 @@ public class EmployeeServiceImpl implements EmployeeService {
 			Query query = session.createQuery("SELECT e FROM Employee AS e WHERE e.name = :name");
 			query.setString("name", name);
 			employees = query.list();
-			if (employees.size() > 0) {
+			if (employees.size() > 0) { 
 				employee = employees.get(0);
 			}
 			session.getTransaction().commit();
