@@ -74,6 +74,6 @@ buildNumber.properties
 ### Other Files ###
 *.bat
 *.py
-*.sql
+#*.sql
 
 # End of https://www.gitignore.io/api/java,visualstudiocode,maven
