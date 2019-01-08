@@ -3,7 +3,6 @@ package com.da.SpringBootExample.repos;
 import java.util.List;
 
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
@@ -21,9 +20,12 @@ public interface EmployeeRepository extends JpaRepository<Employee, Long> {
 	// List<Employee> findByName(@Param("pType") String pType, @Param("lName")
 	// String lName);
 
-	//@Modifying
-//	@Query("SELECT con FROM employee as con WHERE con.name LIKE %:name%")
-//	List<Employee> filterByName(@Param("name") String name);
+	// @Modifying
+	// @Query("SELECT con FROM employee as con WHERE con.name LIKE %:name%")
+	// List<Employee> filterByName(@Param("name") String name);
+
+	@Query("SELECT e FROM Employee e WHERE e.name LIKE %?1%")
+	List<Employee> findByName2(String name);
 
 	List<Employee> findByNameContaining(@Param("name") String name);
 
