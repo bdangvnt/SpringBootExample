@@ -8,7 +8,7 @@ public class Employee {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(nullable = false)
-	private int emid;
+	private long emid;
 
 	@Column(length = 50, nullable = false)
 	private String name;
@@ -32,7 +32,7 @@ public class Employee {
 		this.salary = salary;
 	}
 
-	public int getEmid() {
+	public long getEmid() {
 		return emid;
 	}
 
